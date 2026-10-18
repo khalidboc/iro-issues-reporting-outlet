@@ -1,14 +1,13 @@
-# Object listing — IRO
+# Object listing
 
-| Object | Responsibility | Fields or operations |
+| Object | What it does | Fields |
 |---|---|---|
 | Issue | One report | id, reporter, community, category, title, detail, place, urgency, status, createdAt |
-| Reporter | Who files | Student or Indigene |
+| Reporter | Who sent it | Student or Indigene |
 | Community | Where | AAUA campus, Akungba, Iwaro, Etioro, Ayegunle, Other |
-| Category | Kind | Security, Water, Power, Roads, Hostel, Harassment, Health, Waste, Other |
-| Status | Progress | Open, In review, Resolved |
-| IssueStore | Browser store | loadIssues, saveIssues, nextId |
-| ReportForm | Capture | checks length, creates an Open issue |
-| ReportBoard | Display | filters and desk status buttons |
+| Category | Type of problem | Security, Water, Power, Roads, Hostel, Harassment, Health, Waste, Other |
+| Status | Where the report is | Open, In review, Resolved |
+| Report form | Collects the fields and checks the length | creates an Issue with status Open |
+| Report list | Shows and filters reports | community filter, category filter, desk mode |
 
-Print `docs/iro-standalone.html` as the code listing (font size 10), with this file, the SRS, the use-case SVG, and the Ishikawa SVG.
+The code for the page is in `docs/iro-standalone.html`.

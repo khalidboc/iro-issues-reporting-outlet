@@ -1,21 +1,14 @@
 # IRO — Issues Reporting Outlet
 
-CSC426 Weekly Dev, Weekend 3. Mini web outlet for AAUA students and indigenes of Akungba, Iwaro, Etioro, and Ayegunle.
+CSC426 Weekend 3. AAUA students and indigenes (Akungba, Iwaro, Etioro, Ayegunle) can report a community issue and check the status.
 
-Live mini page for the lecturer: open `docs/iro-standalone.html` in a browser (no install).
+Open `docs/iro-standalone.html` in Chrome. No install. Reports stay on that browser.
 
-| Path | Brief item |
-|---|---|
-| `docs/iro-standalone.html` | Mini web interface (report, list, desk status) |
-| `docs/SRS.md` | Software requirements specification |
-| `docs/usecase.svg` and `docs/usecase.drawio` | Use-case diagram. Open the `.drawio` file in draw.io |
-| `docs/ishikawa.svg` and `docs/ishikawa.drawio` | Ishikawa diagram |
-| `docs/questionnaire.md` | Questions to paste into Google Forms |
-| `docs/object-listing.md` | Object listing |
-| `src/lib/iro.ts`, `src/routes/index.tsx` | Code listing for the React version |
+- `docs/iro-standalone.html` — the page, also the code listing
+- `docs/SRS.md`
+- `docs/usecase.drawio` and `docs/usecase.svg`
+- `docs/ishikawa.drawio` and `docs/ishikawa.svg`
+- `docs/questionnaire.md`
+- `docs/object-listing.md`
 
-Reports stay in the browser. There is no account, on purpose (sensitive reports, short deadline).
-
-Form link: paste the Google Form URL here after you publish it.
-
-Send https://github.com/khalidboc/iro-issues-reporting-outlet to ajsoftengr@gmail.com.
+Google Form: not pasted yet.
