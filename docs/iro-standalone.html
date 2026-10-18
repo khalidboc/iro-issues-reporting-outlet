@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IRO</title>
+<style>
+body{margin:0;background:#f4efe6;color:#1c241f;font:16px/1.5 system-ui,sans-serif}
+main{max-width:960px;margin:0 auto;padding:32px 16px 64px}
+h1{color:#1f4d3a;font-size:48px;margin:4px 0}
+.layout{display:grid;gap:24px}@media(min-width:800px){.layout{grid-template-columns:320px 1fr}}
+form,.card{background:#fffdf8;border:1px solid #d9d0c2;border-radius:20px;padding:16px}
+label{display:block;margin-top:12px;font-weight:600;font-size:14px}
+input,select,textarea{width:100%;min-height:44px;margin-top:4px;border:1px solid #d9d0c2;border-radius:12px;background:#f4efe6;padding:8px 10px;font:inherit}
+button{min-height:44px;border-radius:999px;border:1px solid #d9d0c2;background:#fffdf8;padding:0 14px;cursor:pointer}
+button.primary{width:100%;margin-top:16px;background:#c45c26;color:#fffdf8;border:0;font-weight:700}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.muted{color:#5c675f}.kicker{letter-spacing:.16em;text-transform:uppercase;color:#c45c26;font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">AAUA · CSC426</p>
+<h1>IRO</h1>
+<p class="muted">Issues Reporting Outlet for AAUA students and indigenes of Akungba, Iwaro, Etioro, and Ayegunle. Reports stay in this browser.</p>
+<div class="layout">
+<form id="form">
+<h2>Report an issue</h2>
+<label>Who is reporting<select name="reporter"><option>Student</option><option>Indigene</option></select></label>
+<label>Community<select name="community"><option>AAUA campus</option><option>Akungba</option><option>Iwaro</option><option>Etioro</option><option>Ayegunle</option><option>Other</option></select></label>
+<label>Category<select name="category"><option>Security</option><option>Water</option><option>Power</option><option>Roads</option><option>Hostel</option><option>Harassment</option><option>Health</option><option>Waste</option><option>Other</option></select></label>
+<label>Urgency<select name="urgency"><option>Low</option><option>Normal</option><option>High</option></select></label>
+<label>Short title<input name="title" maxlength="120"/></label>
+<label>Where<input name="place" maxlength="80"/></label>
+<label>What happened<textarea name="detail" rows="4" maxlength="600"></textarea></label>
+<p id="notice" class="muted"></p>
+<button class="primary" type="submit">Submit report</button>
+</form>
+<section>
+<div class="row"><h2>Reports</h2><label class="row"><input id="desk" type="checkbox" style="width:auto;min-height:0"> Desk mode</label></div>
+<div class="row">
+<select id="fcom"><option>All</option><option>AAUA campus</option><option>Akungba</option><option>Iwaro</option><option>Etioro</option><option>Ayegunle</option><option>Other</option></select>
+<select id="fcat"><option>All</option><option>Security</option><option>Water</option><option>Power</option><option>Roads</option><option>Hostel</option><option>Harassment</option><option>Health</option><option>Waste</option><option>Other</option></select>
+</div>
+<div id="list"></div>
+</section>
+</div>
+</main>
+<script>
+const KEY="iro-issues-v1";
+const seed=[{id:"IRO-1042",reporter:"Student",community:"AAUA campus",category:"Power",title:"Hostel block B has been dark for three nights",detail:"Generator did not come on after PHCN failed.",place:"Female hostel, Block B",urgency:"High",status:"Open"},{id:"IRO-1038",reporter:"Indigene",community:"Akungba",category:"Water",title:"Borehole at the market junction is dry",detail:"Households have been buying sachet water since Monday.",place:"Akungba market junction",urgency:"High",status:"In review"}];
+let issues=JSON.parse(localStorage.getItem(KEY)||"null")||seed;
+const save=()=>localStorage.setItem(KEY,JSON.stringify(issues));
+const list=document.getElementById("list");
+const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&","<":"<",">":">"}[c]));
+function draw(){const com=fcom.value,cat=fcat.value,desk=document.getElementById("desk").checked;const rows=issues.filter(i=>(com==="All"||i.community===com)&&(cat==="All"||i.category===cat));list.innerHTML=rows.map(i=>`<article class="card"><p class="kicker">${i.id} · ${i.category} · ${i.status}</p><h3>${esc(i.title)}</h3><p class="muted">${esc(i.detail)}</p><p>${esc(i.place)} · ${i.community} · ${i.reporter}</p>${desk?["Open","In review","Resolved"].map(s=>`<button data-id="${i.id}" data-s="${s}">${s}</button>`).join(" "):""}</article>`).join("")||"<p class=\"card\">No reports in this filter.</p>";}
+document.getElementById("form").onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);const title=String(d.get("title")).trim(),detail=String(d.get("detail")).trim(),place=String(d.get("place")).trim();if(title.length<8||detail.length<12||place.length<3){notice.textContent="Title, place, and a short description are required.";return;}const n=Math.max(1000,...issues.map(i=>Number(String(i.id).replace("IRO-",""))||0))+1;issues.unshift({id:"IRO-"+n,reporter:d.get("reporter"),community:d.get("community"),category:d.get("category"),title,detail,place,urgency:d.get("urgency"),status:"Open"});save();e.target.reset();notice.textContent="IRO-"+n+" is logged.";draw();};
+list.onclick=e=>{const b=e.target.closest("button");if(!b)return;issues=issues.map(i=>i.id===b.dataset.id?{...i,status:b.dataset.s}:i);save();draw();};
+fcom.onchange=fcat.onchange=document.getElementById("desk").onchange=draw;save();draw();
+</script>
+</body>
+</html>
