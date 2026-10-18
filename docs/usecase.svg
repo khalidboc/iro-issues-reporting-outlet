@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 560" font-family="Arial, sans-serif">
+  <rect width="980" height="560" fill="#f4efe6"/>
+  <text x="36" y="40" font-size="26" font-weight="700" fill="#1f4d3a">IRO use-case diagram</text>
+  <rect x="230" y="70" width="500" height="430" rx="16" fill="none" stroke="#1f4d3a" stroke-width="2"/>
+  <text x="250" y="98" fill="#1f4d3a" font-size="14" font-weight="700">IRO system</text>
+  <g fill="#fffdf8" stroke="#1c241f">
+    <ellipse cx="480" cy="150" rx="140" ry="32"/>
+    <ellipse cx="480" cy="230" rx="140" ry="32"/>
+    <ellipse cx="480" cy="310" rx="160" ry="32"/>
+    <ellipse cx="480" cy="390" rx="150" ry="32"/>
+    <ellipse cx="480" cy="460" rx="150" ry="32"/>
+  </g>
+  <g text-anchor="middle" font-size="14" fill="#1c241f">
+    <text x="480" y="155">File an issue</text>
+    <text x="480" y="235">View issue list</text>
+    <text x="480" y="315">Filter by place or type</text>
+    <text x="480" y="395">Receive reference id</text>
+    <text x="480" y="465">Update issue status</text>
+  </g>
+  <text x="70" y="210" text-anchor="middle" font-size="14" font-weight="700">Student /</text>
+  <text x="70" y="228" text-anchor="middle" font-size="14" font-weight="700">Indigene</text>
+  <text x="900" y="430" text-anchor="middle" font-size="14" font-weight="700">Desk</text>
+  <text x="36" y="530" font-size="13" fill="#5c675f">The reporter files, views, and filters. Filing includes a reference id. The desk views, filters, and changes status.</text>
+</svg>
