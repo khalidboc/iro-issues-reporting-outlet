@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1100" height="620" fill="#fafafa"/>
+  <text x="550" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a2e">Ishikawa (Fishbone) Diagram – Root Causes of Ineffective Issues Reporting</text>
+  <text x="550" y="50" text-anchor="middle" font-size="13" fill="#555">Problem: Lack of structured channel for AAUA Students &amp; Indigenes (Akungba, Iwaro, Etioro, Ayegunle) to report &amp; resolve issues</text>
+  <line x1="80" y1="310" x2="880" y2="310" stroke="#333" stroke-width="4"/>
+  <polygon points="880,310 860,300 860,320" fill="#333"/>
+  <rect x="890" y="260" width="190" height="100" rx="8" fill="#dc3545" stroke="#b02a37" stroke-width="2"/>
+  <text x="985" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="white">EFFECT / PROBLEM</text>
+  <text x="985" y="312" text-anchor="middle" font-size="11" fill="white">Ineffective Issue</text>
+  <text x="985" y="328" text-anchor="middle" font-size="11" fill="white">Reporting &amp; Delayed</text>
+  <text x="985" y="344" text-anchor="middle" font-size="11" fill="white">Resolution</text>
+  <line x1="220" y1="310" x2="220" y2="120" stroke="#0d6efd" stroke-width="2.5"/>
+  <line x1="220" y1="120" x2="320" y2="120" stroke="#0d6efd" stroke-width="2"/>
+  <rect x="325" y="95" width="130" height="50" rx="6" fill="#0d6efd"/>
+  <text x="390" y="125" text-anchor="middle" font-size="13" font-weight="700" fill="white">PEOPLE</text>
+  <text x="215" y="160" text-anchor="end" font-size="11" fill="#333">Low awareness of channels</text>
+  <line x1="220" y1="155" x2="250" y2="155" stroke="#6c757d" stroke-width="1"/>
+  <text x="215" y="190" text-anchor="end" font-size="11" fill="#333">Fear of victimization</text>
+  <line x1="220" y1="185" x2="250" y2="185" stroke="#6c757d" stroke-width="1"/>
+  <text x="215" y="220" text-anchor="end" font-size="11" fill="#333">No trained responders</text>
+  <line x1="220" y1="215" x2="250" y2="215" stroke="#6c757d" stroke-width="1"/>
+  <text x="215" y="250" text-anchor="end" font-size="11" fill="#333">Communication barriers</text>
+  <line x1="220" y1="245" x2="250" y2="245" stroke="#6c757d" stroke-width="1"/>
+  <line x1="400" y1="310" x2="400" y2="120" stroke="#198754" stroke-width="2.5"/>
+  <line x1="400" y1="120" x2="500" y2="120" stroke="#198754" stroke-width="2"/>
+  <rect x="505" y="95" width="140" height="50" rx="6" fill="#198754"/>
+  <text x="575" y="125" text-anchor="middle" font-size="13" font-weight="700" fill="white">PROCESS</text>
+  <text x="395" y="160" text-anchor="end" font-size="11" fill="#333">No standard procedure</text>
+  <line x1="400" y1="155" x2="430" y2="155" stroke="#6c757d" stroke-width="1"/>
+  <text x="395" y="190" text-anchor="end" font-size="11" fill="#333">Multiple uncoordinated channels</text>
+  <line x1="400" y1="185" x2="430" y2="185" stroke="#6c757d" stroke-width="1"/>
+  <text x="395" y="220" text-anchor="end" font-size="11" fill="#333">No tracking / feedback</text>
+  <line x1="400" y1="215" x2="430" y2="215" stroke="#6c757d" stroke-width="1"/>
+  <text x="395" y="250" text-anchor="end" font-size="11" fill="#333">Bureaucratic delays</text>
+  <line x1="400" y1="245" x2="430" y2="245" stroke="#6c757d" stroke-width="1"/>
+  <line x1="600" y1="310" x2="600" y2="120" stroke="#6f42c1" stroke-width="2.5"/>
+  <line x1="600" y1="120" x2="700" y2="120" stroke="#6f42c1" stroke-width="2"/>
+  <rect x="705" y="95" width="140" height="50" rx="6" fill="#6f42c1"/>
+  <text x="775" y="125" text-anchor="middle" font-size="13" font-weight="700" fill="white">TECHNOLOGY</text>
+  <text x="595" y="160" text-anchor="end" font-size="11" fill="#333">No digital platform</text>
+  <line x1="600" y1="155" x2="630" y2="155" stroke="#6c757d" stroke-width="1"/>
+  <text x="595" y="190" text-anchor="end" font-size="11" fill="#333">Poor internet in areas</text>
+  <line x1="600" y1="185" x2="630" y2="185" stroke="#6c757d" stroke-width="1"/>
+  <text x="595" y="220" text-anchor="end" font-size="11" fill="#333">No mobile-friendly tool</text>
+  <line x1="600" y1="215" x2="630" y2="215" stroke="#6c757d" stroke-width="1"/>
+  <text x="595" y="250" text-anchor="end" font-size="11" fill="#333">Data not centralized</text>
+  <line x1="600" y1="245" x2="630" y2="245" stroke="#6c757d" stroke-width="1"/>
+  <line x1="220" y1="310" x2="220" y2="500" stroke="#fd7e14" stroke-width="2.5"/>
+  <line x1="220" y1="500" x2="320" y2="500" stroke="#fd7e14" stroke-width="2"/>
+  <rect x="325" y="475" width="140" height="50" rx="6" fill="#fd7e14"/>
+  <text x="395" y="505" text-anchor="middle" font-size="13" font-weight="700" fill="white">MANAGEMENT</text>
+  <text x="215" y="350" text-anchor="end" font-size="11" fill="#333">Unclear ownership (Uni vs LGA)</text>
+  <line x1="220" y1="345" x2="250" y2="345" stroke="#6c757d" stroke-width="1"/>
+  <text x="215" y="380" text-anchor="end" font-size="11" fill="#333">No joint task force</text>
+  <line x1="220" y1="375" x2="250" y2="375" stroke="#6c757d" stroke-width="1"/>
+  <text x="215" y="410" text-anchor="end" font-size="11" fill="#333">Lack of accountability metrics</text>
+  <line x1="220" y1="405" x2="250" y2="405" stroke="#6c757d" stroke-width="1"/>
+  <text x="215" y="440" text-anchor="end" font-size="11" fill="#333">Poor coordination</text>
+  <line x1="220" y1="435" x2="250" y2="435" stroke="#6c757d" stroke-width="1"/>
+  <line x1="400" y1="310" x2="400" y2="500" stroke="#20c997" stroke-width="2.5"/>
+  <line x1="400" y1="500" x2="500" y2="500" stroke="#20c997" stroke-width="2"/>
+  <rect x="505" y="475" width="150" height="50" rx="6" fill="#20c997"/>
+  <text x="580" y="505" text-anchor="middle" font-size="13" font-weight="700" fill="white">ENVIRONMENT</text>
+  <text x="395" y="350" text-anchor="end" font-size="11" fill="#333">Geographic spread of towns</text>
+  <line x1="400" y1="345" x2="430" y2="345" stroke="#6c757d" stroke-width="1"/>
+  <text x="395" y="380" text-anchor="end" font-size="11" fill="#333">Campus–town disconnect</text>
+  <line x1="400" y1="375" x2="430" y2="375" stroke="#6c757d" stroke-width="1"/>
+  <text x="395" y="410" text-anchor="end" font-size="11" fill="#333">Cultural / traditional factors</text>
+  <line x1="400" y1="405" x2="430" y2="405" stroke="#6c757d" stroke-width="1"/>
+  <text x="395" y="440" text-anchor="end" font-size="11" fill="#333">Limited physical offices</text>
+  <line x1="400" y1="435" x2="430" y2="435" stroke="#6c757d" stroke-width="1"/>
+  <line x1="600" y1="310" x2="600" y2="500" stroke="#e83e8c" stroke-width="2.5"/>
+  <line x1="600" y1="500" x2="700" y2="500" stroke="#e83e8c" stroke-width="2"/>
+  <rect x="705" y="475" width="160" height="50" rx="6" fill="#e83e8c"/>
+  <text x="785" y="505" text-anchor="middle" font-size="13" font-weight="700" fill="white">MEASUREMENT</text>
+  <text x="595" y="350" text-anchor="end" font-size="11" fill="#333">No systematic data collection</text>
+  <line x1="600" y1="345" x2="630" y2="345" stroke="#6c757d" stroke-width="1"/>
+  <text x="595" y="380" text-anchor="end" font-size="11" fill="#333">Poor documentation of cases</text>
+  <line x1="600" y1="375" x2="630" y2="375" stroke="#6c757d" stroke-width="1"/>
+  <text x="595" y="410" text-anchor="end" font-size="11" fill="#333">No prioritization analytics</text>
+  <line x1="600" y1="405" x2="630" y2="405" stroke="#6c757d" stroke-width="1"/>
+  <text x="595" y="440" text-anchor="end" font-size="11" fill="#333">Absence of feedback KPIs</text>
+  <line x1="600" y1="435" x2="630" y2="435" stroke="#6c757d" stroke-width="1"/>
+  <text x="550" y="580" text-anchor="middle" font-size="11" fill="#666">IRO Project • Alao Khalid (220404237) • AAUA • Categories adapted from 6M framework for service/community context</text>
+  <text x="550" y="600" text-anchor="middle" font-size="10" fill="#888">Created with reference to Draw.io / Ishikawa methodology</text>
+</svg>
